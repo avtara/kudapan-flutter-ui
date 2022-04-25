@@ -8,6 +8,7 @@ import 'package:universal_io/io.dart';
 
 import 'package:kudapan/config/constant.dart';
 import 'package:kudapan/ui/home.dart';
+import 'package:kudapan/ui/signin.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -29,9 +30,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
       if (_second == 0) {
         _cancelFlashsaleTimer();
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(
-                builder: (context) =>
-                    MyHomePage(title: 'Flutter Demo Home Page')),
+            MaterialPageRoute(builder: (context) => Signin()),
             (Route<dynamic> route) => false);
       }
     });
