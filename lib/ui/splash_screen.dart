@@ -4,6 +4,7 @@ Don't forget to add all images and sound used in this pages at the pubspec.yaml
  */
 
 import 'dart:async';
+import 'package:kudapan/ui/onboarding.dart';
 import 'package:universal_io/io.dart';
 
 import 'package:kudapan/config/constant.dart';
@@ -30,7 +31,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
       if (_second == 0) {
         _cancelFlashsaleTimer();
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) => Signin()),
+            MaterialPageRoute(builder: (context) => OnBoardingPage()),
             (Route<dynamic> route) => false);
       }
     });
