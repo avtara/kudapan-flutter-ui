@@ -1,3 +1,4 @@
+import 'package:kudapan/ui/home.dart';
 import 'package:universal_io/io.dart';
 
 import 'package:flutter/material.dart';
@@ -169,9 +170,10 @@ class _SigninState extends State<Signin> {
                                     )),
                                   ),
                                   onPressed: () {
-                                    Fluttertoast.showToast(
-                                        msg: 'Click login',
-                                        toastLength: Toast.LENGTH_SHORT);
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => HomePage()));
                                   },
                                   child: Padding(
                                     padding:
