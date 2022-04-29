@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
   List<RestaurantModel> _moreRestaurantData = [];
 
   List<String> _addressData = [];
-  String _address = 'Home Address';
+  String _address = 'Michelia Home Address';
 
   @override
   void initState() {
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _getData() {
-    _addressData.add('Home Address');
+    _addressData.add('Michelia Home Address');
     _addressData.add('Office Address');
     _addressData.add('Apartment Address');
     _addressData.add('Mom Address');
@@ -65,22 +65,10 @@ class _HomePageState extends State<HomePage> {
     width = 800px
     height = 320px
      */
-    _bannerData.add(BannerSliderModel(
-        id: 1,
-        image: GLOBAL_URL +
-            '/assets/images/apps/food_delivery/home_banner/1.jpg'));
-    _bannerData.add(BannerSliderModel(
-        id: 2,
-        image: GLOBAL_URL +
-            '/assets/images/apps/food_delivery/home_banner/2.jpg'));
-    _bannerData.add(BannerSliderModel(
-        id: 3,
-        image: GLOBAL_URL +
-            '/assets/images/apps/food_delivery/home_banner/3.jpg'));
-    _bannerData.add(BannerSliderModel(
-        id: 4,
-        image: GLOBAL_URL +
-            '/assets/images/apps/food_delivery/home_banner/4.jpg'));
+    _bannerData.add(BannerSliderModel(id: 1, image: BANNER_NO_IMAGE_URL));
+    _bannerData.add(BannerSliderModel(id: 2, image: BANNER_NO_IMAGE_URL));
+    _bannerData.add(BannerSliderModel(id: 3, image: BANNER_NO_IMAGE_URL));
+    _bannerData.add(BannerSliderModel(id: 4, image: BANNER_NO_IMAGE_URL));
 
     /*
     Image Information
@@ -137,76 +125,40 @@ class _HomePageState extends State<HomePage> {
     _nearbyFoodData = [
       RestaurantModel(
           id: 1,
-          name: "Mr. Hungry",
+          name: "Diaswan Chicken",
           tag: "Chicken, Rice",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/1.jpg",
+          image: NO_IMAGE_URL,
           rating: 4.9,
           distance: 0.4,
-          promo: '50% Off | Get Gift Voucher If You Buy 4 pcs',
-          location: "Crown Street"),
+          promo: '90% Off | Get Gift Voucher If You Buy 4 pcs',
+          location: "Dramaga Street II"),
       RestaurantModel(
           id: 2,
-          name: "Beef Lovers",
-          tag: "Beef, Yakiniku, Japanese Food",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/2.jpg",
+          name: "Nasi Uduk Bu Joko",
+          tag: "Rice, Indonesian",
+          image: NO_IMAGE_URL,
           rating: 5,
           distance: 0.6,
           promo: 'Buy 1 Get 1',
-          location: "Montgomery Street"),
+          location: "Dramaga Raya"),
       RestaurantModel(
           id: 3,
-          name: "Salad Stop",
+          name: "Salad Sehat",
           tag: "Healthy Food, Salad",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/3.jpg",
+          image: NO_IMAGE_URL,
           rating: 4.3,
           distance: 0.7,
           promo: '',
-          location: "Empire Boulevard"),
+          location: "Dramaga Raya"),
       RestaurantModel(
           id: 4,
-          name: "Steam Boat Lovers",
-          tag: "Hot, Fresh, Steam",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/4.jpg",
+          name: "Dimsum",
+          tag: "Japanese, Fresh, Steam",
+          image: NO_IMAGE_URL,
           rating: 4.9,
           distance: 0.7,
           promo: '20% Off',
-          location: "Lefferts Avenue"),
-      RestaurantModel(
-          id: 5,
-          name: "Italian Food",
-          tag: "Penne, Western Food",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/5.jpg",
-          rating: 4.6,
-          distance: 0.9,
-          promo: '',
-          location: "New York Avenue"),
-      RestaurantModel(
-          id: 6,
-          name: "Bread and Cookies",
-          tag: "Bread",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/6.jpg",
-          rating: 4.8,
-          distance: 0.9,
-          promo: '',
-          location: "Mapple Street"),
-      RestaurantModel(
-          id: 7,
-          name: "Awesome Health",
-          tag: "Salad, Healthy Food, Fresh",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/7.jpg",
-          rating: 4.9,
-          distance: 1.1,
-          promo: '10% Off',
-          location: "Fenimore Street"),
-      RestaurantModel(
-          id: 8,
-          name: "Chicken Specialties",
-          tag: "Chicken, Rice, Teriyaki",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/8.jpg",
-          rating: 4.7,
-          distance: 3.9,
-          promo: '10% Off',
-          location: "Liberty Avenue"),
+          location: "Dramaga Street III"),
     ];
 
     /*
@@ -217,77 +169,41 @@ class _HomePageState extends State<HomePage> {
      */
     _orderAgainData = [
       RestaurantModel(
-          id: 5,
-          name: "Italian Food",
-          tag: "Penne, Western Food",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/5.jpg",
-          rating: 4.6,
-          distance: 0.9,
-          promo: '',
-          location: "New York Avenue"),
-      RestaurantModel(
-          id: 6,
-          name: "Bread and Cookies",
-          tag: "Bread",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/6.jpg",
-          rating: 4.8,
-          distance: 0.9,
-          promo: '',
-          location: "Mapple Street"),
-      RestaurantModel(
-          id: 7,
-          name: "Awesome Health",
-          tag: "Salad, Healthy Food, Fresh",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/7.jpg",
-          rating: 4.9,
-          distance: 1.1,
-          promo: '10% Off',
-          location: "Fenimore Street"),
-      RestaurantModel(
-          id: 8,
-          name: "Chicken Specialties",
-          tag: "Chicken, Rice, Teriyaki",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/8.jpg",
-          rating: 4.7,
-          distance: 3.9,
-          promo: '10% Off',
-          location: "Liberty Avenue"),
-      RestaurantModel(
           id: 1,
-          name: "Mr. Hungry",
+          name: "Diaswan Chicken",
           tag: "Chicken, Rice",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/1.jpg",
+          image: NO_IMAGE_URL,
           rating: 4.9,
           distance: 0.4,
-          promo: '50% Off | Get Gift Voucher If You Buy 4 pcs',
-          location: "Crown Street"),
+          promo: '90% Off | Get Gift Voucher If You Buy 4 pcs',
+          location: "Dramaga Street II"),
       RestaurantModel(
           id: 2,
           name: "Beef Lovers",
           tag: "Beef, Yakiniku, Japanese Food",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/2.jpg",
+          image: NO_IMAGE_URL,
           rating: 5,
           distance: 0.6,
           promo: 'Buy 1 Get 1',
-          location: "Montgomery Street"),
+          location: "Botani Square Mall Bogor"),
       RestaurantModel(
           id: 3,
           name: "Salad Stop",
           tag: "Healthy Food, Salad",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/3.jpg",
+          image: NO_IMAGE_URL,
           rating: 4.3,
           distance: 0.7,
           promo: '',
-          location: "Empire Boulevard"),
+          location: "Botani Square Mall Bogor"),
       RestaurantModel(
           id: 4,
           name: "Steam Boat Lovers",
           tag: "Hot, Fresh, Steam",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/4.jpg",
+          image: NO_IMAGE_URL,
           rating: 4.9,
           distance: 0.7,
           promo: '20% Off',
-          location: "Lefferts Avenue"),
+          location: "Botani Square Mall Bogor"),
     ];
 
     /*
@@ -298,69 +214,37 @@ class _HomePageState extends State<HomePage> {
      */
     _foodDiscountData = [
       FoodModel(
-          id: 8,
-          restaurantName: "Chicken Specialties",
-          name: "Chicken Rice Teriyaki",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/8.jpg",
-          price: 5,
-          discount: 10,
-          location: "Liberty Avenue"),
-      FoodModel(
-          id: 7,
-          restaurantName: "Taco Salad Beef Classic",
-          name: "Awesome Health",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/7.jpg",
-          price: 4.9,
-          discount: 10,
-          location: "Fenimore Street"),
-      FoodModel(
-          id: 6,
-          restaurantName: "Bread and Cookies",
-          name: "Delicious Croissant",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/6.jpg",
-          price: 5,
-          discount: 0,
-          location: "Mapple Street"),
-      FoodModel(
-          id: 5,
-          restaurantName: "Italian Food",
-          name: "Chicken Penne With Tomato",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/5.jpg",
-          price: 6.5,
-          discount: 20,
-          location: "New York Avenue"),
-      FoodModel(
           id: 4,
           restaurantName: "Steam Boat Lovers",
           name: "Seafood shabu-shabu",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/4.jpg",
-          price: 6,
-          discount: 20,
-          location: "Lefferts Avenue"),
+          image: NO_IMAGE_URL,
+          price: 40000,
+          discount: 15,
+          location: "Dramaga Street V"),
       FoodModel(
           id: 3,
           restaurantName: "Salad Stop",
           name: "Sesame Salad",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/3.jpg",
-          price: 4.8,
-          discount: 10,
-          location: "Empire Boulevard"),
+          image: NO_IMAGE_URL,
+          price: 22500,
+          discount: 5,
+          location: "Dramaga Street III"),
       FoodModel(
           id: 2,
           restaurantName: "Beef Lovers",
           name: "Beef Yakiniku",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/2.jpg",
-          price: 3.6,
-          discount: 20,
-          location: "Montgomery Street"),
+          image: NO_IMAGE_URL,
+          price: 30000,
+          discount: 45,
+          location: "Dramaga Street IV"),
       FoodModel(
           id: 1,
           restaurantName: "Mr. Hungry",
           name: "Hainam Chicken Rice",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/1.jpg",
-          price: 5,
-          discount: 50,
-          location: "Crown Street"),
+          image: NO_IMAGE_URL,
+          price: 21000,
+          discount: 10,
+          location: "Dramaga Street I"),
     ];
 
     /*
@@ -374,74 +258,38 @@ class _HomePageState extends State<HomePage> {
           id: 2,
           name: "Beef Lovers",
           tag: "Beef, Yakiniku, Japanese Food",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/2.jpg",
+          image: NO_IMAGE_URL,
           rating: 5,
           distance: 0.6,
           promo: 'Buy 1 Get 1',
-          location: "Montgomery Street"),
-      RestaurantModel(
-          id: 4,
-          name: "Steam Boat Lovers",
-          tag: "Hot, Fresh, Steam",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/4.jpg",
-          rating: 4.9,
-          distance: 0.7,
-          promo: '20% Off',
-          location: "Lefferts Avenue"),
-      RestaurantModel(
-          id: 6,
-          name: "Bread and Cookies",
-          tag: "Bread",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/6.jpg",
-          rating: 4.8,
-          distance: 0.9,
-          promo: '',
-          location: "Mapple Street"),
-      RestaurantModel(
-          id: 8,
-          name: "Chicken Specialties",
-          tag: "Chicken, Rice, Teriyaki",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/8.jpg",
-          rating: 4.7,
-          distance: 3.9,
-          promo: '10% Off',
-          location: "Liberty Avenue"),
+          location: "BTM Mall"),
       RestaurantModel(
           id: 1,
-          name: "Mr. Hungry",
+          name: "Diaswan Chicken",
           tag: "Chicken, Rice",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/1.jpg",
+          image: NO_IMAGE_URL,
           rating: 4.9,
           distance: 0.4,
-          promo: '50% Off | Get Gift Voucher If You Buy 4 pcs',
-          location: "Crown Street"),
+          promo: '90% Off | Get Gift Voucher If You Buy 4 pcs',
+          location: "Dramaga Street II"),
       RestaurantModel(
           id: 3,
           name: "Salad Stop",
           tag: "Healthy Food, Salad",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/3.jpg",
+          image: NO_IMAGE_URL,
           rating: 4.3,
           distance: 0.7,
           promo: '',
-          location: "Empire Boulevard"),
+          location: "Botani Square Mall Bogor"),
       RestaurantModel(
-          id: 5,
+          id: 4,
           name: "Italian Food",
           tag: "Penne, Western Food",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/5.jpg",
+          image: NO_IMAGE_URL,
           rating: 4.6,
           distance: 0.9,
           promo: '',
-          location: "New York Avenue"),
-      RestaurantModel(
-          id: 7,
-          name: "Awesome Health",
-          tag: "Salad, Healthy Food, Fresh",
-          image: GLOBAL_URL + "/assets/images/apps/food_delivery/food/7.jpg",
-          rating: 4.9,
-          distance: 1.1,
-          promo: '10% Off',
-          location: "Fenimore Street"),
+          location: "Dramaga Raya I"),
     ];
   }
 
@@ -874,7 +722,7 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       children: [
                         Text(
-                            '\$ ' +
+                            'Rp.' +
                                 _globalFunction.removeDecimalZeroFormat(
                                     ((100 - data.discount) * data.price / 100)),
                             style: GlobalStyle.textPrice),
@@ -883,7 +731,7 @@ class _HomePageState extends State<HomePage> {
                             : SizedBox.shrink(),
                         data.discount != 0
                             ? Text(
-                                '\$ ' +
+                                'Rp.' +
                                     _globalFunction
                                         .removeDecimalZeroFormat(data.price),
                                 style: GlobalStyle.textPriceLineThrough)

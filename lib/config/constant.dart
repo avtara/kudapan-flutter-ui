@@ -27,6 +27,9 @@ const String ERROR_OCCURED = 'Error occured, please try again later';
 const int LIMIT_PAGE = 8;
 
 const String GLOBAL_URL = 'https://devkit.ijteknologi.com';
+const String NO_IMAGE_URL = 'https://i.ibb.co/z6m99WG/Frame-1.png';
+const String BANNER_NO_IMAGE_URL =
+    'https://i.ibb.co/fHT6nWY/Banner-No-Image.png';
 //const String GLOBAL_URL = 'http://192.168.0.4/devkit';
 
 const String SERVER_URL = 'https://devkit.ijteknologi.com/api';

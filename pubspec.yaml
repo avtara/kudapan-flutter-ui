@@ -96,3 +96,4 @@ flutter:
   assets:
   - assets/images/logo.png
   - assets/images/logo-text.png
+  - assets/images/no-image.png
