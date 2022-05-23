@@ -15,9 +15,9 @@ class _SigninState extends State<Signin> {
   bool _obscureText = true;
   IconData _iconVisible = Icons.visibility_off;
 
-  Color _gradientTop = Color(0xFF039be6);
-  Color _gradientBottom = Color(0xFF0299e2);
-  Color _mainColor = Color(0xFF0181cc);
+  Color _gradientTop = Color.fromARGB(255, 230, 75, 3);
+  Color _gradientBottom = Color.fromARGB(255, 189, 62, 3);
+  Color _mainColor = Color.fromARGB(255, 189, 62, 3);
   Color _underlineColor = Color(0xFFCCCCCC);
 
   void _toggleObscureText() {

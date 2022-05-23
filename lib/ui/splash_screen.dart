@@ -76,7 +76,7 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
         return Future.value(false);
       },
       child: Container(
-        color: BLACK21,
+        color: Color.fromARGB(26, 255, 255, 255),
         child: Center(
           child: Image.asset('assets/images/logo.png', height: 200),
         ),

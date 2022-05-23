@@ -1,13 +1,13 @@
-// import 'package:kudapan/ui/detail_food.dart';
-// import 'package:kudapan/ui/detail_restaurant.dart';
-// import 'package:kudapan/ui/order_history.dart';
-// import 'package:kudapan/ui/category_menu.dart';
-// import 'package:kudapan/ui/coupon.dart';
-// import 'package:kudapan/ui/favorites_food_list.dart';
-// import 'package:kudapan/ui/search_restaurant.dart';
-// import 'package:kudapan/ui/food_list.dart';
-// import 'package:kudapan/ui/restaurant_list.dart';
-// import 'package:kudapan/ui/user_profile.dart';
+import 'package:kudapan/ui/detail_food.dart';
+import 'package:kudapan/ui/detail_restaurant.dart';
+import 'package:kudapan/ui/order_history.dart';
+import 'package:kudapan/ui/category_menu.dart';
+import 'package:kudapan/ui/coupon.dart';
+import 'package:kudapan/ui/favorites_food_list.dart';
+import 'package:kudapan/ui/search_restaurant.dart';
+import 'package:kudapan/ui/food_list.dart';
+import 'package:kudapan/ui/restaurant_list.dart';
+import 'package:kudapan/ui/user_profile.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:kudapan/config/constant.dart';
 import 'package:kudapan/config/global_style.dart';
@@ -367,10 +367,13 @@ class _HomePageState extends State<HomePage> {
                     )),
                   ),
                   onPressed: () {
-                    // Navigator.push(context, MaterialPageRoute(builder: (context) => SearchRestaurantPage()));
-                    Fluttertoast.showToast(
-                        msg: 'Not Implemented',
-                        toastLength: Toast.LENGTH_SHORT);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SearchRestaurantPage()));
+                    // Fluttertoast.showToast(
+                    //     msg: 'Not Implemented',
+                    //     toastLength: Toast.LENGTH_SHORT);
                   },
                   child: Row(
                     children: [
@@ -392,9 +395,12 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.only(right: 16),
               child: GestureDetector(
                 onTap: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) => FavoritesFoodListPage()));
-                  Fluttertoast.showToast(
-                      msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => FavoritesFoodListPage()));
+                  // Fluttertoast.showToast(
+                  //     msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
                 },
                 child: Icon(Icons.favorite_border, color: BLACK77),
               )),
@@ -402,9 +408,12 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.only(right: 16),
               child: GestureDetector(
                 onTap: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) => OrderHistoryPage()));
-                  Fluttertoast.showToast(
-                      msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => OrderHistoryPage()));
+                  // Fluttertoast.showToast(
+                  //     msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
                 },
                 child: Icon(Icons.receipt_long_outlined, color: BLACK77),
               )),
@@ -412,9 +421,12 @@ class _HomePageState extends State<HomePage> {
               padding: EdgeInsets.only(right: 16),
               child: GestureDetector(
                 onTap: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) => UserProfilePage()));
-                  Fluttertoast.showToast(
-                      msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => UserProfilePage()));
+                  // Fluttertoast.showToast(
+                  //     msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
                 },
                 child: Icon(Icons.person, color: BLACK77),
               )),
@@ -490,9 +502,10 @@ class _HomePageState extends State<HomePage> {
     return GestureDetector(
       behavior: HitTestBehavior.translucent,
       onTap: () {
-        // Navigator.push(context, MaterialPageRoute(builder: (context) => CouponPage()));
-        Fluttertoast.showToast(
-            msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => CouponPage()));
+        // Fluttertoast.showToast(
+        //     msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
       },
       child: Container(
         padding: EdgeInsets.all(12),
@@ -531,9 +544,13 @@ class _HomePageState extends State<HomePage> {
       children: List.generate(_categoryData.length, (index) {
         return GestureDetector(
             onTap: () {
-              // Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryMenuPage(title: _categoryData[index].name)));
-              Fluttertoast.showToast(
-                  msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          CategoryMenuPage(title: _categoryData[index].name)));
+              // Fluttertoast.showToast(
+              //     msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
             },
             child: Column(children: [
               buildCacheNetworkImage(
@@ -571,9 +588,13 @@ class _HomePageState extends State<HomePage> {
               Text('Food Around You', style: GlobalStyle.horizontalTitle),
               GestureDetector(
                 onTap: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) => RestaurantListPage(title: 'Food Arround You')));
-                  Fluttertoast.showToast(
-                      msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              RestaurantListPage(title: 'Food Arround You')));
+                  // Fluttertoast.showToast(
+                  //     msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
                 },
                 child: Text('View All',
                     style: GlobalStyle.viewAll, textAlign: TextAlign.end),
@@ -645,9 +666,13 @@ class _HomePageState extends State<HomePage> {
               Text('Food on Promotion', style: GlobalStyle.horizontalTitle),
               GestureDetector(
                 onTap: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: (context) => FoodListPage(title: 'Food on Promotion')));
-                  Fluttertoast.showToast(
-                      msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              FoodListPage(title: 'Food on Promotion')));
+                  // Fluttertoast.showToast(
+                  //     msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
                 },
                 child: Text('View All',
                     style: GlobalStyle.viewAll, textAlign: TextAlign.end),
@@ -684,12 +709,14 @@ class _HomePageState extends State<HomePage> {
         child: GestureDetector(
           behavior: HitTestBehavior.translucent,
           onTap: () {
-            // Navigator.push(context, MaterialPageRoute(builder: (context) => DetailRestaurantPage()));
-            Fluttertoast.showToast(
-                msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
-            // Navigator.push(context, MaterialPageRoute(builder: (context) => DetailFoodPage()));
-            Fluttertoast.showToast(
-                msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => DetailRestaurantPage()));
+            // Fluttertoast.showToast(
+            //     msg: 'Not Implemented', toastLength: Toast.LENGTH_SHORT);
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => DetailFoodPage()));
           },
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,

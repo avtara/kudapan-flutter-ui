@@ -1,10 +1,10 @@
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:kudapan/config/constant.dart';
 import 'package:kudapan/config/global_style.dart';
-// import 'package:kudapan/ui/cart.dart';
-// import 'package:kudapan/ui/detail_food.dart';
-// import 'package:kudapan/ui/detail_restaurant.dart';
-// import 'package:kudapan/ui/search_address.dart';
+import 'package:kudapan/ui/cart.dart';
+import 'package:kudapan/ui/detail_food.dart';
+import 'package:kudapan/ui/detail_restaurant.dart';
+import 'package:kudapan/ui/search_address.dart';
 import 'package:kudapan/ui/reusable/cache_image_network.dart';
 import 'package:kudapan/ui/reusable/global_function.dart';
 import 'package:flutter/material.dart';
@@ -25,11 +25,11 @@ class ReusableWidget {
   Widget fabCart(context) {
     return FloatingActionButton(
       onPressed: () {
-        // Navigator.push(
-        //     context, MaterialPageRoute(builder: (context) => CartPage()));
-        Fluttertoast.showToast(
-            msg: 'Not Implemented in Reusable Widget',
-            toastLength: Toast.LENGTH_SHORT);
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => CartPage()));
+        // Fluttertoast.showToast(
+        //     msg: 'Not Implemented in Reusable Widget',
+        //     toastLength: Toast.LENGTH_SHORT);
       },
       child: Stack(
         children: [
@@ -98,13 +98,13 @@ class ReusableWidget {
         child: GestureDetector(
           behavior: HitTestBehavior.translucent,
           onTap: () {
-            // Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => DetailRestaurantPage()));
-            Fluttertoast.showToast(
-                msg: 'Not Implemented in Reusable Widget',
-                toastLength: Toast.LENGTH_SHORT);
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => DetailRestaurantPage()));
+            // Fluttertoast.showToast(
+            //     msg: 'Not Implemented in Reusable Widget',
+            //     toastLength: Toast.LENGTH_SHORT);
           },
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -258,15 +258,15 @@ class ReusableWidget {
         GestureDetector(
           behavior: HitTestBehavior.translucent,
           onTap: () {
-            // Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => DetailRestaurantPage()));
-            // Navigator.push(context,
-            //     MaterialPageRoute(builder: (context) => DetailFoodPage()));
-            Fluttertoast.showToast(
-                msg: 'Not Implemented in Reusable Widget',
-                toastLength: Toast.LENGTH_SHORT);
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => DetailRestaurantPage()));
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => DetailFoodPage()));
+            // Fluttertoast.showToast(
+            //     msg: 'Not Implemented in Reusable Widget',
+            //     toastLength: Toast.LENGTH_SHORT);
           },
           child: Container(
             margin: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -472,11 +472,11 @@ class ReusableWidget {
                             width: double.maxFinite,
                             child: OutlinedButton(
                                 onPressed: () {
-                                  // Navigator.push(
-                                  //     context,
-                                  //     MaterialPageRoute(
-                                  //         builder: (context) =>
-                                  //             SearchAddressPage()));
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              SearchAddressPage()));
                                 },
                                 style: ButtonStyle(
                                     overlayColor: MaterialStateProperty.all(
