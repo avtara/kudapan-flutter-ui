@@ -13,7 +13,6 @@ class FavoritesFoodListPage extends StatefulWidget {
 }
 
 class _FavoritesFoodListPageState extends State<FavoritesFoodListPage> {
-  // initialize shimmer loading and reusable widget
   final _shimmerLoading = ShimmerLoading();
   final _reusableWidget = ReusableWidget();
 
