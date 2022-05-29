@@ -1,3 +1,4 @@
+import 'package:kudapan/controllers/auth_controllers.dart';
 import 'package:kudapan/ui/home.dart';
 import 'package:universal_io/io.dart';
 
@@ -5,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:kudapan/ui/signup.dart';
+import 'package:get/get.dart';
 
 class Signin extends StatefulWidget {
   @override
@@ -40,6 +42,11 @@ class _SigninState extends State<Signin> {
   void dispose() {
     super.dispose();
   }
+
+  final emailC = TextEditingController();
+  final passC = TextEditingController();
+
+  final authC = Get.find<AuthController>();
 
   @override
   Widget build(BuildContext context) {
@@ -98,6 +105,7 @@ class _SigninState extends State<Signin> {
                               height: 20,
                             ),
                             TextField(
+                              controller: emailC,
                               keyboardType: TextInputType.emailAddress,
                               decoration: InputDecoration(
                                   focusedBorder: UnderlineInputBorder(
@@ -115,6 +123,7 @@ class _SigninState extends State<Signin> {
                               height: 20,
                             ),
                             TextField(
+                              controller: passC,
                               obscureText: _obscureText,
                               decoration: InputDecoration(
                                 focusedBorder: UnderlineInputBorder(
@@ -170,10 +179,11 @@ class _SigninState extends State<Signin> {
                                     )),
                                   ),
                                   onPressed: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => HomePage()));
+                                    authC.login(emailC.text, passC.text);
+                                    // Navigator.push(
+                                    //     context,
+                                    //     MaterialPageRoute(
+                                    //         builder: (context) => HomePage()));
                                   },
                                   child: Padding(
                                     padding:

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1004497800235",
+    "project_id": "kudapan-apps",
+    "storage_bucket": "kudapan-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004497800235:android:91e7d22a4e7a90e95cae6e",
+        "android_client_info": {
+          "package_name": "com.example.kudapan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004497800235-302o448r56vc7su829hnl2isn84p6814.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVBnGyitB_UTYTB77EKBQ6cqEbUHRMMMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004497800235-302o448r56vc7su829hnl2isn84p6814.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
